@@ -1,8 +1,6 @@
 import React, { Component } from "react";
 class KommunicateChat extends Component {
-   constructor(props){
-       super(props);
-   } 
+   
 componentDidMount(){
    (function(d, m){
        var kommunicateSettings =
