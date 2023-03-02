@@ -18,9 +18,18 @@ const AskQuestion = () => {
   
   
   const handleSubmit = (e) => {
-    e.preventDefault()
-    dispatch(askQuestion({ questionTitle, questionBody, questionTags, userPosted: User.result.name, userId: User?.result?._id}, navigate))
-}
+    e.preventDefault();
+    if (User === null) {
+      alert("You have to login or signup ");
+    } else {
+      if (!questionBody && !questionTitle && !questionTags) {
+        alert("Enter the question details");
+      } else {
+        dispatch(askQuestion({questionTitle,questionBody,questionTags,userPosted: User.result.name,userId: User?.result?._id,},navigate));
+      }
+    }
+  };
+  
    const handleEnter = (e) => {
     if(e.key === 'Enter'){
         setQuestionBody(questionBody + "\n")
