@@ -26,8 +26,8 @@ function App() {
       <Router>
         <Navbar />
         <AllRoutes/>
-         <Chat />
-
+         
+        <Chat />
       </Router>
     </div>
   );
