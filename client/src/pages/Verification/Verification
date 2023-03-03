@@ -1,0 +1,18 @@
+import React from "react";
+const Verification = () => {
+  return (
+    <section className="verification-section">
+      <h2>Authentication Form</h2>
+      <form>
+        <h4>Enter Mobile Number</h4>
+        <input type="number" name="mobile" placeholder="Mobile number" required/>
+
+
+        <h4>Enter OTP</h4>
+        <input type="number" name="otp" placeholder="OTP Number" required />
+      </form>
+    </section>
+  );
+};
+
+export default Verification;
