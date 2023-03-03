@@ -1,9 +1,8 @@
 import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { Link, useNavigate } from "react-router-dom";
+import {useNavigate } from "react-router-dom";
 import "./AskQuestion.css";
 import { askQuestion } from "../../actions/question";
-import Verification from "../Verification/Verification";
 
 const AskQuestion = () => {
   const [questionTitle, setQuestionTitle] = useState("");
