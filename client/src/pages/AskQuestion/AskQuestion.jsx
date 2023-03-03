@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import {useNavigate } from "react-router-dom";
-import "./AskQuestion.css";
+import "./AskQuestion.css";// eslint-disable-next-line
 import { askQuestion } from "../../actions/question";
 
 const AskQuestion = () => {
