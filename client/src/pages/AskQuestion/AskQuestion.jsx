@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import {useNavigate } from "react-router-dom";
 import "./AskQuestion.css";// eslint-disable-next-line
+import Verification from "../Verification/Verification";
 import { askQuestion } from "../../actions/question";
 
 const AskQuestion = () => {
